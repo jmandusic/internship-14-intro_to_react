@@ -1,15 +1,86 @@
+* {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
 .content-wrapper {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 150px;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
 }
 
 .add-todo__form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+  margin-left: 120px;
+  border-radius: 25px;
+  width: 30%;
+  height: 500px;
+  background-color: #f4f3f4;
+}
+
+.form__header {
+  width: 100%;
+  background-color: #c26659;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.add-todo__header {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+
+.add-todo__title {
+  margin-top: 30px;
+  padding-left: 10px;
+  width: 80%;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 7px;
 }
 
 .add-todo__description {
-    resize: none;
+  resize: none;
+  margin-top: 30px;
+  padding-left: 10px;
+  padding-top: 10px;
+  width: 80%;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 7px;
+}
+
+.add-todo__priority {
+  margin-top: 30px;
+  padding-left: 10px;
+  width: 83.5%;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 7px;
+  font-weight: bolder;
+}
+
+.add-todo__submit-button {
+  margin-top: 30px;
+  width: 83.5%;
+  height: 45px;
+  border: 2px solid #f4f3f4;
+  border-radius: 7px;
+  background-color: #c26659;
+  color: white;
+  font-weight: bolder;
+}
+
+.form__error-message {
+  margin-top: 35px;
+  color: red;
+  font-weight: bolder;
 }
