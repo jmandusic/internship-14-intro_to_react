@@ -65,6 +65,15 @@
 .element__title {
   margin-left: 15px;
   font-size: 27px;
+  color: black;
+  font-weight: bold;
+}
+
+.element__title--styled {
+  margin-left: 15px;
+  text-decoration-line: line-through;
+  color: #e1e1e1;
+  font-size: 27px;
   font-weight: bold;
 }
 

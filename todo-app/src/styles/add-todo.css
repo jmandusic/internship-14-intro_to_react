@@ -45,6 +45,7 @@
   height: 30px;
   border: 2px solid black;
   border-radius: 7px;
+  font-size: 15px;
 }
 
 .add-todo__description {
@@ -56,6 +57,7 @@
   height: 50px;
   border: 2px solid black;
   border-radius: 7px;
+  font-size: 15px;
 }
 
 .add-todo__priority {
@@ -65,6 +67,7 @@
   height: 50px;
   border: 2px solid black;
   border-radius: 7px;
+  font-size: 15px;
   font-weight: bolder;
 }
 

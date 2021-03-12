@@ -6,6 +6,7 @@ const TaskForm = ({ addTask }) => {
     title: "",
     description: "",
     priority: "Low",
+    isChecked: false,
   });
 
   const [errorMessage, setErrorMessage] = useState("");
@@ -44,6 +45,7 @@ const TaskForm = ({ addTask }) => {
       title: "",
       description: "",
       priority: "Low",
+      isChecked: false,
     }));
     setErrorMessage("");
   };
