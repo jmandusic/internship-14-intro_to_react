@@ -50,7 +50,9 @@ const TaskForm = ({ addTask }) => {
 
   return (
     <form onSubmit={handleSubmit} className="add-todo__form">
-      <h2 className="add-todo__header">Add todos</h2>
+      <header className="form__header">
+        <h2 className="add-todo__header">Add todos</h2>
+      </header>
 
       <input
         value={formState.title}
@@ -83,7 +85,9 @@ const TaskForm = ({ addTask }) => {
       </button>
 
       {errorMessage && (
-        <span className="form__erro-message">ERROR: {errorMessage}</span>
+        <span className="form__error-message">
+          Invalid form: {errorMessage}
+        </span>
       )}
     </form>
   );
