@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./styles/add-todo.css";
 import "./styles/todos.css";
 import TaskForm from "./components/TaskForm";
-import TaskList from "./components/TaskList";
+import TaskListDisplay from "./components/TaskListDisplay";
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -17,7 +17,7 @@ function App() {
         <header className="section__header">
           <h2 className="todos__header">Todos</h2>
         </header>
-        <TaskList tasks={tasks} />
+        <TaskListDisplay tasks={tasks} />
       </section>
     </main>
   );

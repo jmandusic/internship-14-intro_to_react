@@ -1,15 +1,13 @@
 import { useState } from "react";
 
 const TaskList = ({ tasks }) => {
-  const [checkboxes, setCheckboxes] = useState([
-    {
-      checked: false,
-    },
-  ]);
-
-  if (tasks.length === 0) {
-    return <p className="todos__message">No items</p>;
-  }
+  const [checkboxes, setCheckboxes] = useState(
+    [
+      {
+        checked: false,
+      },
+    ] * tasks.length
+  );
 
   const checkboxChangeHandler = (e, id) => {
     setCheckboxes((prevState) => ({
@@ -29,7 +27,8 @@ const TaskList = ({ tasks }) => {
           ) : (
             <h2 className="element__title">{title}</h2>
           )}
-          <div className="element-container">
+
+          <div className="element__status-container">
             <label className="element__priority">{priority}</label>
 
             <input
